@@ -24,7 +24,7 @@ The hypothesis was that optimizing for the Dice Coefficient would yield higher s
 ### Convergence Analysis
 *Below is the training history comparing the two loss functions over 8 epochs.*
 
-![Training Graph](final_research_graph.png)
+![Training Graph](images/comparitive_analysis.png)
 
 > **Observation:** The BCE model (grey) stagnated around epoch 6, whereas the Dice model (green) continued to optimize the shape overlap, validating its effectiveness for small targets.
 
@@ -60,9 +60,9 @@ Instead of using `segmentation-models-pytorch`, I implemented the U-Net class ma
 
 ---
 
-## 💻 How to Run
+## How to Run
 
-### 1. Installation
+### Installation
 Clone the repo and install dependencies:
 ```bash
 git clone [https://github.com/your-username/brain-tumor-segmentation-research.git](https://github.com/your-username/brain-tumor-segmentation-research.git)
