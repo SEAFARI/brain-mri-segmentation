@@ -33,10 +33,12 @@ The hypothesis was that optimizing for the Dice Coefficient would yield higher s
 ## Visual Demonstrations
 Quantitative metrics don't tell the whole story. Below is a comparison of the model's predictions on unseen validation patients.
 
-![Patient Predictions](patient_scan_1.png)
+![Patient Predictions](images/model_performance.png)
+![Patient Predictions](images/model_performance_2.png)
+![Patient Predictions](images/model_performance_3.png)
 
 * **Left:** Original MRI Scan.
-* **Middle:** Ground Truth (Radiologist's annotation).
+* **Middle:** Actual Tumor.
 * **Right:** Model Prediction.
 
 Note the high structural similarity between the Ground Truth and the Prediction, even for irregular tumor shapes.
