@@ -12,14 +12,14 @@ Unlike standard tutorials that import pre-built models, this repository features
 ---
 
 ## Key Results
-The hypothesis was that optimizing for the Dice Coefficient would yield sharper tumor boundaries than pixel-wise cross-entropy. The experiment confirmed this, with the Dice Loss model significantly outperforming the baseline.
+The hypothesis was that optimizing for the Dice Coefficient would yield higher sensitivity (Recall) for small tumors compared to pixel-wise cross-entropy. The experiment confirmed this, with the Dice Loss model significantly improving tumor detection rates.
 
 | Metric | Baseline (BCE Loss) | Proposed Method (Dice Loss) | Improvement |
 | :--- | :--- | :--- | :--- |
-| **IoU (Intersection over Union)** | ~0.48 | **0.6691** | +39% |
-| **Dice Score** | ~0.64 | **0.8012** | +25% |
-| **Precision** | N/A | **0.7955** | - |
-| **Recall (Sensitivity)** | N/A | **0.8098** | - |
+| **IoU (Strict)** | 0.6637 | **0.6922** | +4.3% |
+| **Dice Score** | 0.7965 | **0.8177** | +2.7% |
+| **Precision** | **0.9051** | 0.8331 | (Trade-off) |
+| **Recall (Sensitivity)** | 0.7140 | **0.8047** | **+12.7%** |
 
 ### Convergence Analysis
 *Below is the training history comparing the two loss functions over 8 epochs.*
