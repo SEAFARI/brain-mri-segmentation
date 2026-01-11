@@ -2,6 +2,7 @@
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-red)
+[![Dataset](https://img.shields.io/badge/Dataset-Kaggle_Brain_MRI_Segmentation-blue?logo=kaggle)](https://www.kaggle.com/datasets/mateuszbuda/lgg-mri-segmentation)
 
 ## Project Overview
 This project implements a **U-Net** architecture from scratch to perform semantic segmentation on brain MRI scans (LGG Segmentation Dataset). The primary goal was to conduct a controlled experiment comparing **Dice Loss** against the standard **Binary Cross-Entropy (BCE) Loss** to address the class imbalance problem inherent in medical imaging.
